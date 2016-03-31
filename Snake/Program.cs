@@ -7,24 +7,25 @@ using System.Threading.Tasks;
 namespace Snake {
     class Program {
         static void Main(string[] args) {
-            int x1 = 1;
-            int y1 = 3;
-            char sym1 = '*';
 
-            Draw(x1, y1, sym1);
+            Point p1 = new Point();
 
-            int x2 = 3;
-            int y2 = 6;
-            char sym2 = '*';
+            p1.x = 10;
+            p1.y = 11;
+            p1.sym = '%';
 
-            Draw(x2, y2, sym2);
+            p1.Draw();
+
+            Point p2 = new Point();
+
+            p2.x = 3;
+            p2.y = 6;
+            p2.sym = '&';
+
+            p2.Draw();
 
             Console.ReadLine();
         }
 
-        static void Draw(int x, int y, char sym) {
-            Console.SetCursorPosition(x, y);
-            Console.Write(sym);
-        }
     }
 }
