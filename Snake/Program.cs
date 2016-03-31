@@ -13,7 +13,6 @@ namespace Snake {
             p1.x = 10;
             p1.y = 11;
             p1.sym = '%';
-
             p1.Draw();
 
             Point p2 = new Point();
@@ -21,7 +20,6 @@ namespace Snake {
             p2.x = 3;
             p2.y = 6;
             p2.sym = '&';
-
             p2.Draw();
 
             Console.ReadLine();
